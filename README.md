@@ -51,7 +51,7 @@ PR_12_FIREBASE_STORAGE/
 
 ### 1️⃣ Clone the repository
 ```
-git clone <your-repo-link>
+git clone https://github.com/Drashti271/PR_12_Firebase_Storage.git
 cd PR_12_FIREBASE_STORAGE
 ```
 
