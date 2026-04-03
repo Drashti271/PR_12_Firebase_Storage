@@ -1,16 +1,112 @@
-# React + Vite
+# 🚀 Firebase Storage Project (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates how to use **Firebase Storage** in a React application built with Vite.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📂 Project Structure
 
-## React Compiler
+```
+PR_12_FIREBASE_STORAGE/
+│── node_modules/
+│── public/
+│── src/
+│   ├── assets/
+│   │   ├── hero.png
+│   │   ├── react.svg
+│   │   └── vite.svg
+│   ├── App.jsx
+│   ├── firestore.js
+│   └── main.jsx
+│── .gitignore
+│── eslint.config.js
+│── index.html
+│── package-lock.json
+│── package.json
+│── README.md
+│── vite.config.js
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React JS ⚛️
+- Vite ⚡
+- Firebase 🔥
+- JavaScript (ES6)
+
+---
+
+## 🔥 Features
+
+- Upload files to Firebase Storage
+- Retrieve and display files
+- Delete files from Firebase
+- Fast development using Vite
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the repository
+```
+git clone <your-repo-link>
+cd PR_12_FIREBASE_STORAGE
+```
+
+### 2️⃣ Install dependencies
+```
+npm install
+```
+
+### 3️⃣ Configure Firebase
+- Go to Firebase Console
+- Create a project
+- Enable Storage
+- Copy your Firebase config and paste it inside `firestore.js`
+
+Example:
+```js
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_PROJECT_ID.appspot.com",
+  messagingSenderId: "XXXX",
+  appId: "XXXX"
+};
+
+const app = initializeApp(firebaseConfig);
+```
+
+### 4️⃣ Run the project
+```
+npm run dev
+```
+
+---
+
+## 📸 Output
+
+- Upload images/files to Firebase
+- Display uploaded files
+- Perform CRUD operations
+
+---
+
+## 📌 Notes
+
+- Make sure Firebase Storage rules allow read/write during development
+- Use environment variables for security in production
+
+---
+
+## 👩‍💻 Author
+
+**Drashti Bilimoria**
+
+---
+
